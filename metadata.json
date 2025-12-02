@@ -1,0 +1,5 @@
+{
+  "name": "英文背單字",
+  "description": "An interactive vocabulary practice tool that converts text input into clickable buttons. Clicking a word plays its English pronunciation using Gemini's advanced Text-to-Speech model and moves it to a 'mastered' list.",
+  "requestFramePermissions": []
+}
