@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-TW">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>WordSound - Learn Pronunciation</title>
+    <title>WordSound - 英文單字發音練習</title>
+    <!-- Using CDN for Tailwind to keep setup simple, though PostCSS is recommended for production -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
       tailwind.config = {
@@ -21,19 +22,9 @@
         }
       }
     </script>
-  <script type="importmap">
-{
-  "imports": {
-    "react": "https://aistudiocdn.com/react@^19.2.0",
-    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
-    "react/": "https://aistudiocdn.com/react@^19.2.0/",
-    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.30.0"
-  }
-}
-</script>
-</head>
+  </head>
   <body class="bg-background text-gray-800 antialiased min-h-screen flex flex-col">
     <div id="root" class="flex-grow flex flex-col h-full"></div>
-    <script type="module" scr="/index.tsx"></script>
+    <script type="module" src="/index.tsx"></script>
   </body>
 </html>
